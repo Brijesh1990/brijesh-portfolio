@@ -22,17 +22,20 @@ margin: 0;
 padding: 0;
 overflow-x: hidden;
 box-sizing: border-box;
-background-color: var(--bg-darkgray);
+background-color: var(--bg-black);
 } 
 #main
 {
 width: 100%;
-height: 550px;  
+height: 550px;
+margin: 0;
+padding: 0;  
+border: solid 2px transparent;
+margin-top: 0 !important;
 background: linear-gradient(rgba(10,0,0,.9),rgba(5,0,0,0.6)),url('../images/man.png') no-repeat;
 background-size: 60% 650px;
 background-position: right;
 background-attachment: fixed;  
-top: 0 !important;
 }
 .nav
 {
@@ -63,13 +66,89 @@ font-size: 18px;
 .banner h1,h2,h3 
 {
 color: white;
-text-align: center;    
+text-align: center; 
+animation: alternate 0.8s fadeInUp;   
 }
 .get-started
 {
 border-radius: 25px;    
 }
+#about-us
+{
+width: 90%;
+height: auto;  
+margin: auto;  
+}
+#about-us hr 
+{
+width: 5%;
+height: auto;
+margin: auto;
+border: solid 1px red;    
+}
+#about-us h1 
+{
+color: white;
+text-align: center;
+text-transform: uppercase;
+font-size: 55px;
+letter-spacing: 2px;
+line-height: 0.5;    
+}
+.about-me 
+{
+background-color: var(--bg-darkgray);    
+}
+.about-me img 
+{
+width: 135px;
+height: 135px;    
+}
+.about-txt button 
+{
+border: none;
+background-color: rgba(35,0,0,0.5);
+color: red;
+padding: 5px;
+border-radius: 15px;
+margin-top: 2%;    
+}
+.about-txt h1 
+{
+font-size: 25px !important;
+color: white;    
+text-align: left;
+line-height: 1.2 !important;
+}
+.about-txt p 
+{
+color: white;
+text-align: justify;    
+}
+.experiance
+{
+border-radius: 28px;
+height: auto;
+background-color: var(--bg-darkgray);    
+}
+.address,.contact-form
+{
+background-color: var(--bg-darkgray);    
+border-radius: 10px;
+border: solid 1px rgb(72, 68, 68);
+transition: 0.8s ease all;
+}
+.address:hover,
+.contact-form:hover
+{
+border: solid 1px rgb(242, 133, 133);
+box-shadow: 0px 0px 3px white;
+}
+.contact-form input[type="text"]
+{
+background-color: #141414;
 
+}
 /*  media query for mobile*/
 @media only screen and (max-width:580px)
 {
@@ -93,5 +172,12 @@ top: 0 !important;
 color: white;
 text-align: center;    
 font-size: 20px !important;
+}
+.about-me p 
+{
+width: 90% !important;
+height: auto;
+text-align: justify !important;
+text-indent: 15px;    
 }
 }
