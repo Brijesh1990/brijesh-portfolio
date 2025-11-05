@@ -97,7 +97,7 @@ line-height: 0.5;
 }
 .about-me 
 {
-background-color: var(--bg-darkgray);    
+background-color: var(--bg-darkgray) !important;    
 }
 .about-me img 
 {
@@ -173,11 +173,11 @@ color: white;
 text-align: center;    
 font-size: 20px !important;
 }
-.about-me p 
+/* .about-me p 
 {
 width: 90% !important;
 height: auto;
 text-align: justify !important;
 text-indent: 15px;    
-}
+} */
 }
