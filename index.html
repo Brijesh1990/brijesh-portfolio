@@ -46,7 +46,14 @@
 <!-- Brijesh banner section start here  -->
 <div class="banner container p-4">
 <h1 class="mt-5">Hi, I'm Brijesh Kumar Pandey</h1>
-<h2 class="fs-4 mt-4">I am Fullstack Developer</h2>
+<h2 class="fs-4 mt-4" aria-live="polite" data-aos="fade-up">
+  I'm
+  <span class="typewriter-wrap">
+    <span id="typewriter" class="typewriter" role="text"></span>
+    <span class="typewriter-cursor" aria-hidden="true"></span>
+  </span>
+</h2>
+
 <h3 class="mt-5"><span class="bi-facebook text-primary fs-1"></span>
 <span class="bi-instagram text-danger fs-1 ms-2"></span>
 <span class="bi-snapchat text-warning fs-1 ms-2"></span>
@@ -263,5 +270,7 @@ AOS.init();
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="js/main.js"></script>
 </body>
 </html>
