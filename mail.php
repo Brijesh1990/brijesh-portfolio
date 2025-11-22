@@ -24,7 +24,7 @@ $mail->isSMTP();//Send using SMTP
 $mail->Host= 'smtp.gmail.com';//Set the SMTP server to send through
 $mail->SMTPAuth   = true; //Enable SMTP authentication
 $mail->Username   = 'brijeshpandey.tops@gmail.com';//SMTP username
-$mail->Password   = 'edat oxtz fcfh iknw';//SMTP password
+$mail->Password   = 'jadu teyl wqkz ggjb';//SMTP password
 $mail->SMTPSecure = 'TLS';//Enable implicit TLS encryption
 $mail->Port       = 587; //TCP port to connect to; use 587 
 //Recipients
@@ -33,9 +33,7 @@ $mail->addAddress('brijeshpandey.tops@gmail.com', 'Admin'); //Add a recipient
 //Content
 $mail->isHTML(true);                                  //Set email format to HTML
 $mail->Subject = 'Contact us enquiry customer details';
-$mail->Body ="
-<div style='width:100%; background:#f5f7fa; padding:20px; font-family:Arial, sans-serif;'>
-
+$mail->Body ="<div style='width:100%; background:#f5f7fa; padding:20px; font-family:Arial, sans-serif;'>
   <div style='max-width:600px; margin:auto; background:#ffffff; border-radius:10px; padding:25px; box-shadow:0 4px 12px rgba(0,0,0,0.1);'>
 
     <div style='text-align:center; margin-bottom:20px;'>
@@ -63,8 +61,7 @@ $mail->Body ="
 
   </div>
 
-</div>
-";
+</div>";
 
 $mail->send();
 // echo 'Message has been sent';
@@ -72,6 +69,7 @@ echo "<script>
 alert('Thanks for contact with us we will contact with you soon')
 window.location='index.html';
 </script>";
+
 } catch (Exception $e) {
 echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
